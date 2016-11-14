@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041A8FEA1DBF343D004AA897 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8FE91DBF343D004AA897 /* CustomView.m */; };
 		046BD4591DB8DA0600FFECC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BD4581DB8DA0600FFECC9 /* main.m */; };
 		046BD45C1DB8DA0600FFECC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BD45B1DB8DA0600FFECC9 /* AppDelegate.m */; };
 		046BD45F1DB8DA0600FFECC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BD45E1DB8DA0600FFECC9 /* ViewController.m */; };
 		046BD4621DB8DA0600FFECC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046BD4601DB8DA0600FFECC9 /* Main.storyboard */; };
 		046BD4641DB8DA0600FFECC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046BD4631DB8DA0600FFECC9 /* Assets.xcassets */; };
 		046BD4671DB8DA0600FFECC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046BD4651DB8DA0600FFECC9 /* LaunchScreen.storyboard */; };
+		046BD4701DB8DE0D00FFECC9 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BD46F1DB8DE0D00FFECC9 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041A8FE81DBF343D004AA897 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = Views/CustomView.h; sourceTree = "<group>"; };
+		041A8FE91DBF343D004AA897 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = Views/CustomView.m; sourceTree = "<group>"; };
 		046BD4541DB8DA0600FFECC9 /* Objective-C Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046BD4581DB8DA0600FFECC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		046BD45A1DB8DA0600FFECC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		046BD4631DB8DA0600FFECC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046BD4661DB8DA0600FFECC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046BD4681DB8DA0600FFECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046BD46E1DB8DE0D00FFECC9 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		046BD46F1DB8DE0D00FFECC9 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041A8FE71DBF341D004AA897 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				041A8FE81DBF343D004AA897 /* CustomView.h */,
+				041A8FE91DBF343D004AA897 /* CustomView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		046BD44B1DB8DA0600FFECC9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +75,7 @@
 			children = (
 				046BD45A1DB8DA0600FFECC9 /* AppDelegate.h */,
 				046BD45B1DB8DA0600FFECC9 /* AppDelegate.m */,
+				041A8FE71DBF341D004AA897 /* Views */,
 				046BD45D1DB8DA0600FFECC9 /* ViewController.h */,
 				046BD45E1DB8DA0600FFECC9 /* ViewController.m */,
 				046BD4601DB8DA0600FFECC9 /* Main.storyboard */,
@@ -67,6 +83,8 @@
 				046BD4651DB8DA0600FFECC9 /* LaunchScreen.storyboard */,
 				046BD4681DB8DA0600FFECC9 /* Info.plist */,
 				046BD4571DB8DA0600FFECC9 /* Supporting Files */,
+				046BD46E1DB8DE0D00FFECC9 /* TableViewCell.h */,
+				046BD46F1DB8DE0D00FFECC9 /* TableViewCell.m */,
 			);
 			path = "Objective-C Test";
 			sourceTree = "<group>";
@@ -150,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041A8FEA1DBF343D004AA897 /* CustomView.m in Sources */,
 				046BD45F1DB8DA0600FFECC9 /* ViewController.m in Sources */,
+				046BD4701DB8DE0D00FFECC9 /* TableViewCell.m in Sources */,
 				046BD45C1DB8DA0600FFECC9 /* AppDelegate.m in Sources */,
 				046BD4591DB8DA0600FFECC9 /* main.m in Sources */,
 			);
@@ -309,6 +329,7 @@
 				046BD46D1DB8DA0600FFECC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TableViewCell.h"
+#import <Contacts/Contacts.h>
 
 @interface ViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self filterArray];
+//    [self filterArray];
 }
 
 
@@ -93,7 +94,8 @@
         return YES;
     }];
     
-//    NSArray *filteredArray = [objects filteredArrayUsingPredicate:predicate];
+    NSArray *filteredArray = [objects filteredArrayUsingPredicate:predicate];
+    NSLog(@"%@", filteredArray);
 }
 
 
@@ -101,7 +103,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 0;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -115,6 +117,97 @@
 
 #pragma mark - UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self performSegueWithIdentifier:@"mySegue" sender:nil];
+}
+
+- (void)showActionSheet {
+    UIAlertController * view=   [UIAlertController
+                                 alertControllerWithTitle:@"Share "
+                                 message:@"Select your current status"
+                                 preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction* online = [UIAlertAction
+                             actionWithTitle:@"Facebook"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 //Do some thing here
+                                 [view dismissViewControllerAnimated:YES completion:nil];
+                             }];
+    UIAlertAction* offline = [UIAlertAction
+                              actionWithTitle:@"Google+"
+                              style:UIAlertActionStyleDefault
+                              handler:^(UIAlertAction * action)
+                              {
+                                  [view dismissViewControllerAnimated:YES completion:nil];
+                              }];
+    UIAlertAction* doNotDistrbe = [UIAlertAction
+                                   actionWithTitle:@"LinkedIn"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action)
+                                   {
+                                       [view dismissViewControllerAnimated:YES completion:nil];
+                                   }];
+    UIAlertAction* away = [UIAlertAction
+                           actionWithTitle:@"Twitter"
+                           style:UIAlertActionStyleDefault
+                           handler:^(UIAlertAction * action)
+                           {
+                               [view dismissViewControllerAnimated:YES completion:nil];
+                               
+                           }];
+    UIAlertAction* cancel = [UIAlertAction
+                             actionWithTitle:@"Cancel"
+                             style:UIAlertActionStyleCancel
+                             handler:^(UIAlertAction * action)
+                             {
+                             }];
+    
+    [online setValue:[[UIImage imageNamed:@"agreement"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    [offline setValue:[[UIImage imageNamed:@"archery"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    [doNotDistrbe setValue:[[UIImage imageNamed:@"capitalism"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    [away setValue:[[UIImage imageNamed:@"strategy"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    
+    [view addAction:online];
+    [view addAction:away];
+    [view addAction:offline];
+    [view addAction:doNotDistrbe];
+    [view addAction:cancel];
+    
+    [self presentViewController:view animated:YES completion:^{
+        [self printSubviews:view.view];
+    }];
+}
+
+- (void)printSubviews:(UIView *)view {
+    
+    if (view.subviews.count > 0) {
+        
+//        NSLog(@"Subviews of: %@", [view class]);
+        
+        for (UIView *subview in view.subviews) {
+            [self printSubviews:subview];
+        }
+    }
+    else {
+        if ([view isKindOfClass:[UILabel class]]) {
+            
+            UILabel *label = (UILabel *)view;
+            label.textAlignment = NSTextAlignmentLeft;
+            NSLog(@"%@", view);
+        }
+    }
+}
+
+- (NSArray *)subviews:(UIView *)view {
+    
+    NSArray *views;
+    
+    
+    
+    return views;
+}
 
 #pragma mark - UITextFieldDelegate
 
@@ -132,8 +225,6 @@
     CGFloat textWidth = [text sizeWithAttributes:@{NSFontAttributeName: textField.font}].width;
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    
-//    CGRect rect = [text boundingRectWithSize:<#(CGSize)#> options:<#(NSStringDrawingOptions)#> attributes:<#(nullable NSDictionary<NSString *,id> *)#> context:<#(nullable NSStringDrawingContext *)#>]
     
     if (textWidth > screenWidth) {
         

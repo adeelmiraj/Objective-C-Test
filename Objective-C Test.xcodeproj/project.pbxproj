@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		041A8FEA1DBF343D004AA897 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A8FE91DBF343D004AA897 /* CustomView.m */; };
+		043C9A231DDB1349007571A3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C9A221DDB1349007571A3 /* BaseViewController.m */; };
+		043C9A261DDB13E1007571A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C9A251DDB13E1007571A3 /* ViewController.m */; };
+		043C9A291DDB140F007571A3 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C9A281DDB140F007571A3 /* MyViewController.m */; };
+		043C9A2D1DDB179F007571A3 /* ContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C9A2C1DDB179F007571A3 /* ContactsManager.m */; };
+		043C9A301DDB2F0B007571A3 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C9A2F1DDB2F0B007571A3 /* Contact.m */; };
 		046BD4591DB8DA0600FFECC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BD4581DB8DA0600FFECC9 /* main.m */; };
 		046BD45C1DB8DA0600FFECC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BD45B1DB8DA0600FFECC9 /* AppDelegate.m */; };
-		046BD45F1DB8DA0600FFECC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046BD45E1DB8DA0600FFECC9 /* ViewController.m */; };
 		046BD4621DB8DA0600FFECC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046BD4601DB8DA0600FFECC9 /* Main.storyboard */; };
 		046BD4641DB8DA0600FFECC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046BD4631DB8DA0600FFECC9 /* Assets.xcassets */; };
 		046BD4671DB8DA0600FFECC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046BD4651DB8DA0600FFECC9 /* LaunchScreen.storyboard */; };
@@ -20,12 +24,20 @@
 /* Begin PBXFileReference section */
 		041A8FE81DBF343D004AA897 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = Views/CustomView.h; sourceTree = "<group>"; };
 		041A8FE91DBF343D004AA897 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = Views/CustomView.m; sourceTree = "<group>"; };
+		043C9A211DDB1349007571A3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ViewControllers/BaseViewController.h; sourceTree = "<group>"; };
+		043C9A221DDB1349007571A3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ViewControllers/BaseViewController.m; sourceTree = "<group>"; };
+		043C9A241DDB13E1007571A3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewControllers/ViewController.h; sourceTree = "<group>"; };
+		043C9A251DDB13E1007571A3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewControllers/ViewController.m; sourceTree = "<group>"; };
+		043C9A271DDB140F007571A3 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyViewController.h; path = ViewControllers/MyViewController.h; sourceTree = "<group>"; };
+		043C9A281DDB140F007571A3 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyViewController.m; path = ViewControllers/MyViewController.m; sourceTree = "<group>"; };
+		043C9A2B1DDB179F007571A3 /* ContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsManager.h; path = Models/ContactsManager.h; sourceTree = "<group>"; };
+		043C9A2C1DDB179F007571A3 /* ContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsManager.m; path = Models/ContactsManager.m; sourceTree = "<group>"; };
+		043C9A2E1DDB2F0B007571A3 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = Models/Contact.h; sourceTree = "<group>"; };
+		043C9A2F1DDB2F0B007571A3 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = Models/Contact.m; sourceTree = "<group>"; };
 		046BD4541DB8DA0600FFECC9 /* Objective-C Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046BD4581DB8DA0600FFECC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		046BD45A1DB8DA0600FFECC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		046BD45B1DB8DA0600FFECC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		046BD45D1DB8DA0600FFECC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		046BD45E1DB8DA0600FFECC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		046BD4611DB8DA0600FFECC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		046BD4631DB8DA0600FFECC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046BD4661DB8DA0600FFECC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +66,30 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		043C9A201DDB130C007571A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				043C9A211DDB1349007571A3 /* BaseViewController.h */,
+				043C9A221DDB1349007571A3 /* BaseViewController.m */,
+				043C9A241DDB13E1007571A3 /* ViewController.h */,
+				043C9A251DDB13E1007571A3 /* ViewController.m */,
+				043C9A271DDB140F007571A3 /* MyViewController.h */,
+				043C9A281DDB140F007571A3 /* MyViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		043C9A2A1DDB1766007571A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				043C9A2B1DDB179F007571A3 /* ContactsManager.h */,
+				043C9A2C1DDB179F007571A3 /* ContactsManager.m */,
+				043C9A2E1DDB2F0B007571A3 /* Contact.h */,
+				043C9A2F1DDB2F0B007571A3 /* Contact.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		046BD44B1DB8DA0600FFECC9 = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +111,9 @@
 			children = (
 				046BD45A1DB8DA0600FFECC9 /* AppDelegate.h */,
 				046BD45B1DB8DA0600FFECC9 /* AppDelegate.m */,
+				043C9A2A1DDB1766007571A3 /* Models */,
 				041A8FE71DBF341D004AA897 /* Views */,
-				046BD45D1DB8DA0600FFECC9 /* ViewController.h */,
-				046BD45E1DB8DA0600FFECC9 /* ViewController.m */,
+				043C9A201DDB130C007571A3 /* ViewControllers */,
 				046BD4601DB8DA0600FFECC9 /* Main.storyboard */,
 				046BD4631DB8DA0600FFECC9 /* Assets.xcassets */,
 				046BD4651DB8DA0600FFECC9 /* LaunchScreen.storyboard */,
@@ -123,7 +159,7 @@
 		046BD44C1DB8DA0600FFECC9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "AM Co.";
 				TargetAttributes = {
 					046BD4531DB8DA0600FFECC9 = {
@@ -168,11 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C9A261DDB13E1007571A3 /* ViewController.m in Sources */,
 				041A8FEA1DBF343D004AA897 /* CustomView.m in Sources */,
-				046BD45F1DB8DA0600FFECC9 /* ViewController.m in Sources */,
+				043C9A231DDB1349007571A3 /* BaseViewController.m in Sources */,
 				046BD4701DB8DE0D00FFECC9 /* TableViewCell.m in Sources */,
 				046BD45C1DB8DA0600FFECC9 /* AppDelegate.m in Sources */,
 				046BD4591DB8DA0600FFECC9 /* main.m in Sources */,
+				043C9A2D1DDB179F007571A3 /* ContactsManager.m in Sources */,
+				043C9A301DDB2F0B007571A3 /* Contact.m in Sources */,
+				043C9A291DDB140F007571A3 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +256,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -264,6 +305,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
